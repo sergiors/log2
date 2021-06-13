@@ -1,0 +1,29 @@
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | node_modules
+)/
+'''
+
+[tool.poetry]
+name = "log2"
+version = "0.1.0"
+description = ""
+authors = ["Sérgio Rafael Siqueira <osergiosiqueira@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sh = "^1.14.2"
+requests = "^2.25.1"
+cloudflare = "^2.8.15"
+PyYAML = "^5.4.1"
+glom = "^20.11.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
