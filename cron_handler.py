@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from dns import update_dynamic_dns
-from config_vars import dns_name, zone_id, token
+from settings import dns_name, zone_id, token
 
 
 try:

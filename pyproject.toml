@@ -21,6 +21,7 @@ requests = "^2.25.1"
 cloudflare = "^2.8.15"
 PyYAML = "^5.4.1"
 glom = "^20.11.0"
+textual = "^0.1.2"
 
 [tool.poetry.dev-dependencies]
 

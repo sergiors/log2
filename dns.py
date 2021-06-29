@@ -4,6 +4,7 @@ import CloudFlare
 
 def ip_address():
     url = 'https://api.ipify.org'
+
     try:
         r = requests.get(url)
         r.raise_for_status()
@@ -14,11 +15,7 @@ def ip_address():
     if ip_address == '':
         raise '%s: failed' % (url)
 
-    if ':' in ip_address:
-        ip_address_type = 'AAAA'
-    else:
-        ip_address_type = 'A'
-
+    ip_address_type = 'AAAA' if ':' in ip_address else 'A'
     return ip_address, ip_address_type
 
 
